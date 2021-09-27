@@ -8,14 +8,12 @@
     <title>Busca CEP</title>
 </head>
 <body>
-    <header id="cabecalho">
-        <h3>Ferramenta de Busca de Cep, Utilizando como base de dados, a API da ViaCEP</h3>
-    </header>
     <div class="container">
+        <h3>Ferramenta de Busca de Cep, Utilizando como base de dados, a API da ViaCEP</h3>
         <form id="formulario">
             <div class="form-group">
                 <label for="cep">CEP</label>
-                <input type="text" class="form-control" id="cep">
+                <input type="text" class="form-control" maxlength="9" id="cep">
                 <small>00000-000</small>
             </div>
             <div class="form-group">
@@ -24,22 +22,27 @@
                 <small>R. Av.</small>
             </div>
             <div class="form-group">
+                <label for="complemento">Complemento</label>
+                <input type="text" class="form-control" id="complemento">
+                <small>Complemento</small>
+            </div>
+            <div class="form-group">
                 <label for="bairro">Bairro</label>
                 <input type="text" class="form-control" id="bairro">
-                <small></small>
+                <small>Bairro</small>
             </div>
             <div class="form-group">
                 <label for="localidade">Localidade</label>
                 <input type="text" class="form-control" id="localidade">
-                <small></small>
+                <small>Cidade</small>
             </div>
             <div class="form-group">
                 <label for="UF">UF</label>
                 <input type="text" class="form-control" id="uf">
-                <small></small>
+                <small>Estado</small>
             </div>
         </form>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
